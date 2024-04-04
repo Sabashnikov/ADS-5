@@ -4,10 +4,12 @@
 
 template<typename T, int size>
 class SStack {
+
 private:
   const int SIZE = size;
   T arr[100];
   int top;
+
 public:
   SStack() : top(-1) { }
   T get() const {
