@@ -137,10 +137,12 @@ std::string infx2pstfx(std::string inf) {
     if (inf[i] == '\0') {
       while (!stack1.isEmpty()) {
         newstring += stack1.get();
+        newstring += ' ';
         stack1.pop();
       }
     }
   }
+  newstring.pop_back();
   return newstring;
 }
 
