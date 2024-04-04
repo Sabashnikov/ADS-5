@@ -178,6 +178,7 @@ int eval(std::string pref) {
       stack2.push(res);
     }
     if (pref[i] == '\0')
-      return stack2.get();
+      break;
   }
+  return stack2.get();
 }
